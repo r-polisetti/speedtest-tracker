@@ -82,7 +82,7 @@ You can modify this via the `SPEEDTEST_SCHEDULE` environment variable.
 
 ## 📸 Screenshots
 
-<img width="1912" height="972" alt="image" src="https://github.com/user-attachments/assets/43647b4d-6659-4fc4-b605-31b10ae5ddbb" />
+![giphy](https://github.com/user-attachments/assets/5140d618-bfe1-475a-9d7a-5049a2e66a80)
 
 ---
 
