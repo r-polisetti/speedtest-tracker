@@ -88,7 +88,68 @@ You can modify this via the `SPEEDTEST_SCHEDULE` environment variable.
 
 ## 🙋‍♂️ Why I Built This
 
-This project helps monitor broadband performance over time and ensures my connection consistently meets ISP claims. It was also a great opportunity to explore Docker, cron scheduling, and real-time network diagnostics.
+## 🙋‍♂️ Why I Built This
+
+> *"Is it just me, or is the internet slow again?"*  
+> *— Everyone, all the time*
+
+It all started when people kept complaining about internet speed.  
+But every time I ran a speed test — boom 💥 — speeds looked perfect. Suspiciously perfect.
+
+So I asked myself:
+
+![Thinking...](https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif)
+
+**Is my ISP really delivering what they promise all the time?**  
+I started manually testing using:
+- Speedtest.net  
+- Fast.com  
+- MyFibre app  
+
+But then I thought, *how many times can I keep running these tests like a caveman?*
+
+---
+
+### 💡 The Idea
+
+Let’s automate it!  
+I set up `speedtest-cli` with `cron` jobs to run tests on a schedule. Great. ✅  
+But then came the **next challenge**:  
+📊 **Data analysis.**
+
+My terminal started looking like Matrix logs — tons of numbers, no insight.  
+This was spiraling out of hand.
+
+---
+
+### 🔍 Enter: **Speedtest Tracker**
+
+I figured, *someone must’ve solved this already*.  
+A quick search led me to the amazing open-source project: **Speedtest Tracker**.
+
+And wow — what a tool:
+
+✅ Beautiful UI  
+📈 Real-time graphs & charts  
+📥 Exportable Excel reports (perfect to send to the ISP)  
+🚀 Quick Docker setup  
+🔔 Smart notifications when speeds drop
+
+I configured it to alert me if speeds fall below:
+- **Download:** 120 Mbps  
+- **Upload:** 120 Mbps  
+
+Now, when things go sideways — I *know exactly when and how*.
+
+---
+
+### 🚀 TL;DR
+
+Tired of arguing with your ISP about inconsistent speeds?  
+Set up Speedtest Tracker with Docker, and let the graphs do the talking.  
+I’ve even attached screenshots to show you how it looks.
+
+Try it yourself — it’s a great tool!
 
 ---
 
