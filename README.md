@@ -82,7 +82,9 @@ You can modify this via the `SPEEDTEST_SCHEDULE` environment variable.
 
 ## 📸 Screenshots
 
-![giphy](https://github.com/user-attachments/assets/5140d618-bfe1-475a-9d7a-5049a2e66a80)
+<img width="1919" height="1000" alt="image" src="https://github.com/user-attachments/assets/2ae637e9-e5e4-4051-b444-ee0b71e9c0f1" />
+
+<img width="1910" height="995" alt="image" src="https://github.com/user-attachments/assets/08a460cc-5daa-4a2f-ae59-bc3d879ab9a9" />
 
 ---
 
@@ -96,7 +98,8 @@ But every time I ran a speed test — boom 💥 — speeds looked perfect. Suspi
 
 So I asked myself:
 
-![Thinking...](<img width="500" height="375" alt="image" src="https://github.com/user-attachments/assets/53a87f07-08ef-43a9-8dd0-392a6444bffb" />)
+![giphy](https://github.com/user-attachments/assets/92cf6a43-33bc-4f95-942e-e67f2e845c26)
+
 
 **Is my ISP really delivering what they promise all the time?**  
 I started manually testing using:
