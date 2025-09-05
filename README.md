@@ -88,8 +88,6 @@ You can modify this via the `SPEEDTEST_SCHEDULE` environment variable.
 
 ## 🙋‍♂️ Why I Built This
 
-## 🙋‍♂️ Why I Built This
-
 > *"Is it just me, or is the internet slow again?"*  
 > *— Everyone, all the time*
 
@@ -98,7 +96,7 @@ But every time I ran a speed test — boom 💥 — speeds looked perfect. Suspi
 
 So I asked myself:
 
-![Thinking...](https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif)
+![Thinking...](<img width="500" height="375" alt="image" src="https://github.com/user-attachments/assets/53a87f07-08ef-43a9-8dd0-392a6444bffb" />)
 
 **Is my ISP really delivering what they promise all the time?**  
 I started manually testing using:
