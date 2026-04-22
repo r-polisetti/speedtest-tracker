@@ -1,5 +1,5 @@
 
-# 📡 Speedtest Tracker - Docker Setup
+# 📡 Self-Hosted Internet Speed Monitor
 
 A simple self-hosted setup for [Speedtest Tracker](https://github.com/alexjustesen/speedtest-tracker) using Docker Compose on Ubuntu. This setup lets you monitor internet speed on a schedule, view historical results, and set performance thresholds with a beautiful web UI.
 
@@ -124,7 +124,7 @@ tgram://BOT_TOKEN/CHAT_ID
 
 <img width="1910" height="995" alt="image" src="https://github.com/user-attachments/assets/08a460cc-5daa-4a2f-ae59-bc3d879ab9a9" />
 
-<img width="1220" height="2603" alt="Media (55)" src="https://github.com/user-attachments/assets/da2edeab-9a45-4add-99ee-fc6b66442c9d" />
+<img width="300" height="500" alt="Media (55)" src="https://github.com/user-attachments/assets/da2edeab-9a45-4add-99ee-fc6b66442c9d" />
 
 ---
 
