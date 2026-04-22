@@ -124,6 +124,8 @@ tgram://BOT_TOKEN/CHAT_ID
 
 <img width="1910" height="995" alt="image" src="https://github.com/user-attachments/assets/08a460cc-5daa-4a2f-ae59-bc3d879ab9a9" />
 
+<img width="1220" height="2603" alt="Media (55)" src="https://github.com/user-attachments/assets/da2edeab-9a45-4add-99ee-fc6b66442c9d" />
+
 ---
 
 ## 🙋‍♂️ Why I Built This
