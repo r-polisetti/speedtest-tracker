@@ -13,6 +13,7 @@ A simple self-hosted setup for [Speedtest Tracker](https://github.com/alexjustes
 - 🔐 SSL support (self-signed or custom keys)
 - 📊 Clean and responsive web interface
 - 🛠️ Easily configurable with Docker Compose
+- Apprise (notification handler)  
 
 ---
 
@@ -38,23 +39,39 @@ Here’s the `docker-compose.yaml` used:
 services:
   speedtest-tracker:
     image: lscr.io/linuxserver/speedtest-tracker:latest
-    restart: unless-stopped
     container_name: speedtest-tracker
+    restart: unless-stopped
     ports:
-      - 8080:80          # Web UI
-      - 8443:443         # HTTPS
+      - 8080:80
+      - 8443:443
     environment:
       - PUID=1000
       - PGID=1000
-      - APP_NAME=Speedtest-tracker
       - APP_TIMEZONE=Asia/Kolkata
       - DISPLAY_TIMEZONE=Asia/Kolkata
       - TZ=Asia/Kolkata
-      - SPEEDTEST_SCHEDULE=*/30 * * * *
-      - APP_KEY=base64:your-generated-app-key
+
+      - SPEEDTEST_SCHEDULE=*/10 * * * *
+      - SPEEDTEST_SERVERS=50231
+
+      - NOTIFICATION_DRIVER=apprise
+      - APPRISE_URL=http://apprise:8000/notify
+      - APPRISE_TAG=all
+
       - DB_CONNECTION=sqlite
+
     volumes:
       - ./config:/config
+
+    depends_on:
+      - apprise
+
+  apprise:
+    image: caronc/apprise
+    container_name: apprise
+    restart: unless-stopped
+    ports:
+      - 8000:8000
 ````
 
 > 📌 **Note**: Replace `your-generated-app-key` with your own key from [Speedtest Tracker App Key Generator](https://speedtest-tracker.dev/)
@@ -78,6 +95,27 @@ You can modify this via the `SPEEDTEST_SCHEDULE` environment variable.
 * **Web UI**: [http://localhost:8080](http://localhost:8080)
 * **HTTPS UI**: [https://localhost:8443](https://localhost:8443) *(if using SSL)*
 
+Key settings:
+Speed test interval:
+```
+SPEEDTEST_SCHEDULE=*/10 * * * *
+```
+Fixed server (optional):
+```
+SPEEDTEST_SERVERS=50231
+```
+Apprise webhook:
+```
+APPRISE_URL=http://apprise:8000/notify
+```
+📲 Telegram Alerts
+
+Apprise is used to forward notifications to Telegram.
+
+Format used:
+```
+tgram://BOT_TOKEN/CHAT_ID
+```
 ---
 
 ## 📸 Screenshots
